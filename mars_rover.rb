@@ -72,7 +72,7 @@ class Rover
 	end	
 
 	def to_s
-		"position is now (#{@x}, #{@y}, \"#{@direction}\")"
+		"(#{@x}, #{@y}, \"#{@direction}\")"
 	end
 end
 
@@ -93,5 +93,5 @@ puts "Please specify Rover 2's moves"
 instructions = gets.chomp
 rover2.read_instruction(instructions)
 
-puts "Rover1's new " + rover1.to_s
-puts "Rover2's new " + rover2.to_s
+puts "Rover1's new position is now #{rover1}"
+puts "Rover2's new position is now #{rover2}"
